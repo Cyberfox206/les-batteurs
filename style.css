@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-over: #ffc368;
+    --color-noir: #1a1a1a;
+    --color-orange: #f9a02c;
+    --basique-font: 'Arvo', serif;
+    --color-violet: rgb(17, 0, 17);
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-noir);
+}
+
+header {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img {
+    width: 130px;
+    margin: 15px;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header ul li {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--color-orange);
+
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--basique-font);
+}
+
+header ul li:hover {
+    background-color: var(--color-over);
+}
+
+header ul li:hover a {
+    color: var(--color-noir);
+}
+
+main {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h2 {
+    
+}
