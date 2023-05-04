@@ -77,8 +77,72 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--color-violet);
 }
 
-main h2 {
-    
+main article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main article h1 {
+    margin: 10px;
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    font-family: var(--basique-font);
+}
+
+main article hr {
+    width: 95%;
+    align-self: center;
+    color: var(--color-orange);
+}
+
+main article p {
+    width: 95%;
+    margin: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main article iframe {
+    width: 80%;
+    margin: 10px;
+    align-self: center;
+}
+
+main article h2 {
+    margin: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--color-orange);
+    font-family: var(--basique-font);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer img {
+    width: 16%;
+    margin: 15px;
+}
+
+footer small {
+    display: flex;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
