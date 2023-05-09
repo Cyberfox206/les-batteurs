@@ -17,10 +17,9 @@
 
 body {
     width: 100vw;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: var(--color-noir);
 }
@@ -82,8 +81,6 @@ main {
 
 main article {
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 main article h1 {
@@ -98,7 +95,8 @@ main article h1 {
 
 main article hr {
     width: 95%;
-    align-self: center;
+    margin: 0 auto;
+    margin: 10px;
     color: var(--color-orange);
 }
 
@@ -112,7 +110,6 @@ main article p {
 main article iframe {
     width: 80%;
     margin: 10px;
-    align-self: center;
 }
 
 main article h2 {
@@ -121,6 +118,10 @@ main article h2 {
     text-transform: uppercase;
     color: var(--color-orange);
     font-family: var(--basique-font);
+}
+
+aside {
+    display: none;
 }
 
 footer {
@@ -132,7 +133,7 @@ footer {
 }
 
 footer img {
-    width: 16%;
+    width: 10%;
     margin: 15px;
 }
 
@@ -145,4 +146,60 @@ footer small {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (min-width: 600px) {
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    aside {
+        width: 95%;
+        display: block;
+        background-color: var(--color-over);
+    }
+
+    aside article h2 {
+        margin: 10px;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: var(--color-noir);
+        font-family: var(--basique-font);
+    }
+
+    aside article p {
+        width: 95%;
+        margin: 10px;
+        color: var(--color-noir);
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    aside article iframe {
+        width: 80%;
+        margin: 10px;
+    }
+}
+
+@media (min-width:800px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header ul {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    main {
+        width: 65%;
+    }
+
+    aside {
+        width: 30%;
+    }
 }
